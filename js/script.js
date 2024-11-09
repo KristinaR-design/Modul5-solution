@@ -79,7 +79,7 @@ function buildAndShowHomeHTML(categories) {
     homeHtmlUrl,
     function (homeHtml) {
       // Шаг 2: Выбираем случайную категорию
-      var chosenCategoryShortName = chooseRandomCategory(categories);
+      var chosenCategoryShortName = chooseRandomCategory(categories).short_name;
 
       // Шаг 3: Подставляем выбранное имя категории в HTML-шаблон
       // Используем функцию insertProperty для замены плейсхолдера {{randomCategoryShortName}} на выбранное значение
