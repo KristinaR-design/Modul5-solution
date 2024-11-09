@@ -83,7 +83,7 @@ function buildAndShowHomeHTML(categories) {
 
       // Шаг 3: Подставляем выбранное имя категории в HTML-шаблон
       // Используем функцию insertProperty для замены плейсхолдера {{randomCategoryShortName}} на выбранное значение
-      var homeHtmlToInsertIntoMainPage = insertProperty(homeHtml, "randomCategoryShortName", "'" + chosenCategoryShortName + "'");
+      var homeHtmlToInsertIntoMainPage = insertProperty(homeHtml, "randomCategoryShortName", chosenCategoryShortName);
 
       // Шаг 4: Вставляем полученный HTML в основной контент страницы
       insertHtml("#main-content", homeHtmlToInsertIntoMainPage);
